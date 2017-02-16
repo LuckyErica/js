@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 数组去重 -->
+	<script>
+		// var array = [1,2,12,13,45,12,3,6,5];
+		// function unique1(array){ 
+		// 	var n = []; 
+		// 	for(var i = 0; i < array.length; i++){ 
+		// 		if (n.indexOf(array[i]) == -1) 
+		// 			n.push(array[i]); 
+		// 	} 
+		// 	return n; 
+		// }
+
+		// console.log(unique1(array));
+	</script>
+
+	<!-- 字符串中出现次数最多的字母 -->
+	<script>
+		// var str = "zhaochucishuzuiduodezifu";
+		// var o = {};
+		// for (var i = 0, length = str.length; i < length; i++) {
+		// 	// var char = str[i];
+		// 	var char = str.charAt(i);
+		// 	if (o[char]) { //char就是对象o的一个属性，o[char]是属性值，o[char]控制出现的次数
+		// 		o[char]++; //次数加1
+		// 	} else {
+		// 		o[char] = 1; //若第一次出现，次数记为1
+		// 	}
+		// }
+		// console.log(o); //输出的是完整的对象，记录着每一个字符及其出现的次数
+		// //遍历对象，找到出现次数最多的字符和次数
+		// var max = 0;
+		// var maxChar = null;
+		// for (var key in o) {
+		// 	if (max < o[key]) {
+		// 		max = o[key]; //max始终储存次数最大的那个
+		// 		maxChar = key; //那么对应的字符就是当前的key
+		// 	}
+		// }
+		// console.log("最多的字符是" + maxChar);
+		// console.log("出现的次数是" + max);
+	</script>
+
+	<!-- 冒泡排序 -->
+	<script>
+		// var arr = [12,45,12,13,89,46,56];
+		// function bubbleSort(arr) {  
+		//     for(let i = 0,l=arr.length;i<l-1;i++) {
+		//         for(let j = i+1;j<l;j++) { 
+		//           if(arr[i]>arr[j]) {
+		//                 let tem = arr[i];
+		//                 arr[i] = arr[j];
+		//                 arr[j] = tem;
+		//             }
+		//         }
+		//     }
+		//     return arr;
+		// }
+		// console.log(bubbleSort(arr));
+	</script>
+
+	<!-- 找出下列正数组的最大差值 -->
+	<script>
+		// var arr = [10,5,11,7,8,9]
+		// function getMaxProfit(arr) {
+		//     var minPrice;
+		//     var maxProfit = 0;
+		//     for (var i = 0; i < arr.length; i++) {
+		//         minPrice = Math.min(arr[0], arr[i]);
+		//         var potentialProfit = arr[i] - minPrice;
+		//         maxProfit = Math.max(maxProfit, potentialProfit);
+		//     }
+		//     return maxProfit;		
+		// }
+		// console.log(getMaxProfit(arr))
+	</script>
+
+	<!-- 随机生成指定长度的字符串 -->
+	<script>
+		function randomString(n) {  
+		  	let str = 'abcdefghijklmnopqrstuvwxyz9876543210';
+		  	let tmp = '',
+		      	i = 0,
+		      	l = str.length;
+		  	for (i = 0; i < n; i++) {
+		    	tmp += str.charAt(Math.floor(Math.random() * l));
+		  	}
+		  	return tmp;
+		}
+		console.log(randomString(8));
+	</script>
+</body>
+</html>
